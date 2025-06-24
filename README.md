@@ -1,1 +1,3 @@
-# Learning-different-programming-languages
+Hey people!! 
+This repo will help you learn a variety of programming language basics and some advanced functions...
+Happy Learning!!

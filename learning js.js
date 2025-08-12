@@ -1,8 +1,6 @@
 // JavaScript Cheatsheet
 
-// ======================
 // VARIABLES & DATA TYPES
-// ======================
 
 // Variable Declarations
 var name = "John";       // Function-scoped, can be redeclared
@@ -22,9 +20,7 @@ let null_var = null;
 let sym = Symbol('id');
 let bigInt = 123n;
 
-// ============
 // OPERATORS
-// ============
 
 // Arithmetic
 // + - * / % ** ++ --
@@ -39,10 +35,7 @@ let bigInt = 123n;
 // = += -= *= /=
 // %= **= <<= >>= >>>= &= ^= |=
 
-
-// ===============
 // CONTROL FLOW
-// ===============
 
 // If statement
 if (age > 18) {
@@ -87,9 +80,8 @@ for (let val of arr) {
   console.log(val);
 }
 
-// ============
+
 // FUNCTIONS
-// ============
 
 function greet(name) {
   return `Hello, ${name}!`;
@@ -120,9 +112,8 @@ function greetWithObject({ name, age }) {
   return `Hello, ${name}! You are ${age} years old.`;
 }
 
-// ============
+
 // ARRAYS
-// ============
 
 let arr2 = new Array(5);
 let arr3 = Array.of(1, 2, 3);
@@ -193,9 +184,7 @@ Object.assign({}, person);
 Object.freeze(person);
 Object.seal(person);
 
-// ============
 // STRING METHODS
-// ============
 
 let str2 = "Hello World";
 str2.length;
@@ -216,9 +205,7 @@ str2.split(' ');
 
 let greeting = `Hello, ${name}!`;
 
-// ============
 // DESTRUCTURING
-// ============
 
 let [a, b, c] = [1, 2, 3];
 let [first, ...rest] = [1, 2, 3, 4, 5];
@@ -227,9 +214,7 @@ let [x, y, z = 0] = [1, 2];
 let {name: fullName, age: userAge} = {name: "John", age: 30};
 let {city = "Unknown"} = {};
 
-// ============
 // ES6+ FEATURES
-// ============
 
 let arr1 = [1, 2, 3];
 let arr4 = [...arr1, 4, 5];
@@ -284,9 +269,7 @@ try {
   console.log("Always runs");
 }
 
-// ============
 // TYPE CHECKING
-// ============
 
 let value = "test";
 typeof value;
@@ -296,9 +279,7 @@ value === null;
 value === undefined;
 value == null;
 
-// ============
 // REGEX
-// ============
 
 let regex = /hello/i;
 regex.test("Hello");
@@ -306,18 +287,14 @@ regex.test("Hello");
 "Hello".replace(regex, "Hi");
 "Hello".search(regex);
 
-// ============
 // JSON
-// ============
 
 let jsonStr = '{"name": "John"}';
 let jsonObj = JSON.parse(jsonStr);
 let strJSON = JSON.stringify(jsonObj);
 let formattedJSON = JSON.stringify(jsonObj, null, 2);
 
-// ============
 // DOM MANIPULATION
-// ============
 
 document.getElementById('myId');
 document.querySelector('.myClass');
@@ -327,9 +304,7 @@ element.textContent = 'Hello';
 document.body.appendChild(element);
 element.addEventListener('click', e => console.log('Clicked!'));
 
-// ============
 // MATH, DATE, NUMBER
-// ============
 
 Math.random();
 Math.floor(4.7);
